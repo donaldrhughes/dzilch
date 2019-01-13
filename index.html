@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<!-- HTML 5 -->
+<html lang="en">
+
+
+<head>
+    <!-- Standard Visual Studio Code Head Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Eric Meyer's Reset for Cross Browser Consistency -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <!-- Main Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <!-- Google Fonts CDN for Roboto and Open Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Charm|Open+Sans|Roboto|Indie+Flower" rel="stylesheet">
+    <!-- Main CSS Link -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- JQuery Links -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+
+
+    <title>Tournament Zilch</title>
+
+</head>
+
+
+<body>
+
+
+    <!-- NOTEPAD MODAL -->
+
+    <div id="notepadScore" class="modal fade notepadSize">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <!-- Modal body -->
+                <div class="modal-body notepadScore">
+
+                    <!-- First row -->
+                    <div id="row" class="row notepadText1">
+
+
+                        <div id="col" class="col">
+                            <div id="p1notepadName"></div>
+                            <div id="p1score"></div>
+                        </div>
+
+                        <div id="col" class="col">
+                            <div id="p2notepadName"></div>
+                            <div id="p2score"></div>
+                        </div>
+
+                        <div id="col" class="col">
+                            <div id="p3notepadName"></div>
+                            <div id="p3score"></div>
+                        </div>
+                    </div>
+
+                    <!-- Second row -->
+                    <div id="row" class="row notepadText2">
+
+                        <div id="col" class="col">
+                            <div id="p4notepadName"></div>
+                            <div id="p4score"></div>
+                        </div>
+
+                        <div id="col" class="col">
+                            <div id="p5notepadName"></div>
+                            <div id="p5score"></div>
+                        </div>
+
+                        <div id="col" class="col">
+                            <div id="p6notepadName"></div>
+                            <div id="p6score"></div>
+                        </div>
+
+                    </div>
+
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- SETTINGS MODAL -->
+
+    <div id="settingsModal" class="modal fade sModalsize">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header sModalhead"></div>
+
+                <!-- Modal body -->
+                <div class="modal-body sModalbody">
+                    <div id="col" class="col">Music on/off</div>
+
+                    <div id="col" class="col">Sounds on/off</div>
+
+                    <div id="col" class="col">Timer on/off</div>
+
+                    <div id="col" class="col">How To Play</div>
+
+                    <div id="col" class="col">Player Stats</div>
+
+
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ZILCH MODAL -->
+
+    <div id=zilchModal class="modal zilchModal">
+        <div class="modal-dialog" role="document"></div>
+    </div>
+
+
+
+    <!-- Main Container Begin -->
+
+    <!-- Card Goes Here -->
+    <img class="table" src="./assets/images/Zilchtable.jpg" alt="-Zilch Table-">
+    <!-- Main Board Text Overlay Starts Here -->
+    <div class="card-img-overlay">
+
+        <!-- Main Game Row (Inside Overlay) -->
+        <div class="row">
+
+            <!-- First Col -->
+            <div class="col">
+
+                <!--Player 1, name, bank-->
+                <!-- Player 3, name, bank -->
+                <!--Player 5, name, bank -->
+
+
+                <div id="col1" class="col">
+                    <div class="playerOneImg" id="player1"></div>
+                </div>
+
+                <div class="col">
+                    <div class="playerOneName" id="p1name"></div>
+                </div>
+
+                <div class="col">
+                    <div class="playerOneBank" id="p1bank"></div>
+                </div>
+
+
+
+                <div id="col" class="col">
+                    <div class="playerThreeImg" id="player3"></div>
+                </div>
+
+                <div class="col">
+                    <div class="playerThreeName" id="p3name"></div>
+                </div>
+
+                <div class="col">
+                    <div class="playerThreeBank" id="p3bank"></div>
+                </div>
+
+
+
+                <div id="col" class="col">
+                    <div class="playerFiveImg" id="player5"></div>
+                </div>
+
+                <div class="col">
+                    <div class="playerFiveName" id="p5name"></div>
+                </div>
+
+                <div class="col">
+                    <div class="playerFiveBank" id="p5bank"></div>
+                </div>
+
+
+
+            </div>
+
+
+
+            <!-- Second Col-->
+
+            <!--Dice Cup-->
+            <!--Dice Sort-->
+            <!--Value Text-->
+            <!--Dice-->
+            <!--Message-->
+
+            <div id="col2" class="col">
+
+                <div class="col">
+                    <div id="roll-cup"></div>
+
+                    <div id="rollCounter" class="rollCounter"></div>
+                </div>
+
+
+                <div class="col">
+                    <div class="res" id="result-text"></div>
+                </div>
+
+                <div class="col">
+                    <div class="valueText" id="value-text"></div>
+
+
+                </div>
+
+
+                <div class="col">
+
+
+
+                    <!-- Dice Area contain !needs margins changed for screen size -->
+                    <div id="diceArea" class="diceArea">
+
+                        <div id="img0"></div>
+                        <div id="img1"></div>
+                        <div id="img2"></div>
+                        <div id="img3"></div>
+                        <div id="img4"></div>
+                        <div id="img5"></div>
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <div class="message" id="message-text"></div>
+                </div>
+
+
+            </div>
+
+
+            <!-- Third Col -->
+
+            <!-- Settings Gear -->
+            <!-- Player 2-->
+            <!-- Player 4-->
+            <!-- Player 6-->
+
+            <div id="col3" class="col">
+
+                <div class="col">
+                    <div id="settings" class="settings"></div>
+                </div>
+
+
+                <div class="col">
+                    <div class="playerTwoImg" id="player2"></div>
+                </div>
+
+                <div class="col">
+                    <div class="playerTwoName" id="p2name"></div>
+                </div>
+
+                <div class="col">
+                    <div class="playerTwoBank" id="p2bank"></div>
+                </div>
+
+
+                <div class="col">
+                    <div class="playerFourImg" id="player4"></div>
+                </div>
+
+                <div class="col">
+                    <div class="playerFourName" id="p4name"></div>
+                </div>
+
+                <div class="col">
+                    <div class="playerFourBank" id="p4bank"></div>
+                </div>
+
+
+                <div class="col">
+                    <div class="playerSixImg" id="player6"></div>
+                </div>
+
+                <div class="col">
+                    <div class="playerSixName" id="p6name"></div>
+                </div>
+
+                <div class="col">
+                    <div class="playerSixBank" id="p6bank"></div>
+                </div>
+
+
+            </div>
+
+        </div> <!-- End of row -->
+
+
+        <!-- Start Of Second Row -->
+
+        <!-- Blank Coloum -->
+        <!-- Hold Area -->
+        <!-- Blank Coloum -->
+
+        <div class="row">
+
+            <div class="col"></div>
+
+            <div class="col">
+                <!-- Hold Area -->
+                <div id="holdArea" class="holdArea"></div>
+
+
+                <div class="col">
+                    <!-- Hold Area Text -->
+                    <div id="holdAreaText" class="holdAreaText"></div>
+
+                </div>
+
+                <div id="start"></div>
+                <div class="text-dark" id="playersText">Select Number of Players</div>
+                <form>
+
+                    <select class="bg-light" id="playersOpt">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option selected="selected">6</option>
+                    </select>
+                </form>
+            </div>
+
+            <div class="col"></div>
+
+
+
+
+        </div>
+
+        <!-- Start Of Third Row -->
+
+        <!-- notepad -->
+        <!-- bank points -->
+        <!-- Blank Coloum -->
+
+
+        <div class="row">
+
+            <div class="col">
+                <div id="notepad" class="notepad"></div>
+            </div>
+
+            <div class="col">
+                <!-- Bank Points -->
+                <div id="bankPoints"></div>
+            </div>
+
+            <div class="col"></div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div> <!-- End Of Overlay -->
+
+
+
+    <!-- All The Good Stuff -->
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+    <!-- Firebase App is always required and must be first -->
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-app.js"></script>
+
+    <!-- Add additional services that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-database.js"></script>
+
+    <!-- Required JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <!-- Required popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <!-- Required Bootstrap JQuery CDN -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./assets/javascript/zilch.js"></script>
+</body>
+
+</html>

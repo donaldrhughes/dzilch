@@ -1,0 +1,284 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    text-align:center;
+    color:#eee;
+    font-size:12px;
+    text-align:center;
+}
+
+
+
+.table{
+    height:100%;
+    width:100%;
+}
+
+.playersOpt{
+    visibility: hidden;
+}
+
+
+/* Images!*/
+
+.settings{
+    margin-top:-15%;
+    margin-left:85%;    
+}
+
+
+.bankPointsBtn{  
+    margin-top:25%;
+    margin-left:0%;
+    height:25px;
+    Width:75px;
+    background-position: center;
+}
+
+.startBtn{
+    font-family: 'Charm', cursive;
+    margin-top: 100%;
+}
+
+
+/* Text  */
+
+.res{
+    margin-top:10%;
+    color:white;
+    font-size:13px;
+    text-align: center;
+    
+}
+
+.valueText{
+    font-size:13px;
+    margin-top:1%;
+    color:white;
+    text-align: center;
+    margin-left:-30%;
+    margin-right:-30%;
+}
+
+.message{
+    color:blue;
+    font-weight:bolder;
+    font-size:13px;
+    margin-top:190%;
+    margin-left:-30%;
+    margin-right:-30%;
+}
+
+
+/* Dice & Dice Cup */
+
+.diceCup{
+    height: 90%;
+    width:90%;
+    margin-top:60%;
+}
+
+.dice{
+    border-radius: 2px;
+    margin: 2px;
+    float:left;
+}
+
+.diceArea{
+margin-top:10%;
+margin-left:-65%;
+margin-right:-110%;  
+}
+
+.holdArea{
+    margin-top:3%;
+    height:25px;
+    width:148px;
+}
+
+.holdAreaText {
+    color:white;
+    font-family: 'Indie Flower', cursive;
+    font-size: 15px;
+
+}
+
+/* Player 1 */
+
+.playerOneImg{
+    margin-top:85%;
+    margin-left:-25%;
+    height:100%;
+    width:100%;
+}
+
+.playerOneName{
+    font-size:10px;
+    margin-left:-50%; 
+}
+
+.playerOneBank{
+    font-size:10px;
+    margin-left:-50%;
+}
+
+/* Player 2 */
+
+.playerTwoImg{
+    margin-top:50%;
+    margin-left:22%;
+    height:100%;
+    width:100%;
+}
+
+.playerTwoName{
+    font-size:10px;
+    margin-left:35%; 
+}
+
+.playerTwoBank{
+    font-size:10px;
+    margin-left:45%;
+}
+
+/* Player 3 */
+
+.playerThreeImg{
+    margin-top:65%;
+    margin-left:-50%;
+    height:100%;
+    width:100%;
+}
+.playerThreeName{
+    font-size:10px;
+    margin-left:-100%; 
+}
+
+.playerThreeBank{
+    font-size:10px;
+    margin-left:-100%;
+}
+
+/* Player 4 */
+
+.playerFourImg{
+    margin-top:75%;
+    margin-left:45%;
+    height:100%;
+    width:100%;
+}
+.playerFourName{
+    font-size:10px;
+    margin-right: -90%; 
+}
+
+.playerFourBank{
+    font-size:10px;
+    margin-right:-90%;
+}
+
+
+/* Player 5 */
+
+.playerFiveImg{
+    margin-top:65%;
+    margin-left:-25%;
+    height:100%;
+    width:100%;
+}
+
+.playerFiveName{
+    font-size:10px;
+    margin-left:-50%; 
+}
+
+.playerFiveBank{
+    font-size:10px;
+    margin-left:-50%;
+}
+
+/* Player 6 */
+
+.playerSixImg{
+    margin-top:60%;
+    margin-left:22%;
+    height:100%;
+    width:100%;
+}
+
+.playerSixName{
+    font-size:10px;
+    margin-right: -30%; 
+}
+
+.playerSixBank{
+    font-size:10px;
+    margin-left:45%;
+}
+
+.zilchModal{
+    background-image: url('../images/zilchModal.gif');
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+/* Settings Modal!*/
+
+.sModalsize{
+    width:225px;
+    height:100%;
+}
+
+
+.sModalhead{
+    background-image: url('../images/Smodalhead.png');
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.sModalbody{
+    background-image: url('../images/Smodalbody.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    font-family: 'Roboto', sans-serif;
+    color:black;
+    font-size:18px;
+    line-height:1.8;
+    text-align:center;
+
+}
+
+.notepad{
+margin-top:20%;
+margin-right:70%;
+}
+
+/* NOTEPAD Modal!*/
+
+
+.notepadSize{
+    width:300px;
+    height:100%;
+    
+}
+
+.notepadScore{
+    background-image: url('../images/notepadscore.png');
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.notepadText1{
+    font-family: 'Roboto', sans-serif;
+    color:black;
+    font-size:15px;
+    margin-top:14%;
+}
+
+.notepadText2{
+    font-family: 'Roboto', sans-serif;
+    color:black;
+    font-size:15px;
+    margin-top:75%;
+    margin-bottom:50%;
+}
